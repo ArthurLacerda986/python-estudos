@@ -1,0 +1,16 @@
+nome = input("Insira o nome: ")
+nota = float(input("Digite sua nota: "))
+
+def avaliar_nota(nome, nota):
+    if nota < 0 or nota > 10:
+        return f"Nota inválida"
+    elif nota >= 7:
+        return f"{nome}, aprovado"
+    elif nota >= 5:
+        return f"{nome}, recuperação"
+    else:
+        return f"{nome}, reprovado"
+
+resultado = avaliar_nota(nome, nota)
+
+print(resultado)
